@@ -1,0 +1,25 @@
+*.swp
+*.swo
+
+# Ignore all compiled files regardless of location
+build/*.o
+tests/public.o
+tests/testsuite.o
+
+# Ignore executables for this project
+tests/testsuite
+client
+server
+interp
+
+# But don't ignore prebuilt test versions
+!tests/client
+!tests/server
+
+# Ignore test outputs
+tests/ckstyle
+tests/itests.txt
+tests/outputs
+tests/style.txt
+tests/valgrind
+tests/utests.txt
